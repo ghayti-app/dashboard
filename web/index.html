@@ -1,0 +1,94 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+  <meta charset="UTF-8">  
+  <title>admin_dashboard</title>  
+
+  <!-- Essential Meta Tags -->  
+     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">  
+
+    <script type="text/javascript">
+    window.flutterWebRenderer = "html";
+</script> 
+ 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  
+  <meta name="description" content="A new Flutter project.">  
+  <meta name="apple-mobile-web-app-capable" content="yes">  
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">  
+  <meta name="apple-mobile-web-app-title" content="admin_dashboard">  
+  <meta name="Access-Control-Allow-Origin" value="*">
+
+  <!-- Favicon -->  
+  <link rel="icon" type="image/png" href="favicon.png">  
+
+  <!-- iOS Touch Icon -->  
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">  
+
+  <!-- Manifest -->  
+  <link rel="manifest" href="manifest.json">  
+
+  <!-- Google Maps API -->  
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBw2yjQlova1YwxnvA733FZ9PK7sn99jlU&libraries=places,drawing,visualization" async defer></script>  
+ 
+   
+  <!-- MarkerClusterer -->  
+  <script src="https://unpkg.com/@googlemaps/markerclusterer@2.5.3/dist/index.umd.min.js"></script>  
+
+  <!-- Firebase Scripts -->  
+  <script src="https://www.gstatic.com/firebasejs/9.6.9/firebase-app.js"></script>  
+ <script src="https://www.gstatic.com/firebasejs/9.6.9/firebase-storage.js"></script>  
+  <script src="https://www.gstatic.com/firebasejs/9.6.9/firebase-auth.js"></script>  
+  <script src="https://www.gstatic.com/firebasejs/9.6.9/firebase-firestore.js"></script>  
+  <script src="https://www.gstatic.com/firebasejs/9.6.9/firebase-functions.js"></script>  
+  <script src="https://www.gstatic.com/firebasejs/9.6.9/firebase-messaging.js"></script>  
+ 
+  <!-- Flutter Web Renderer -->  
+  <script type="text/javascript">  
+    window.flutterWebRenderer = "html";  
+  </script>  
+
+  <!-- Flutter Service Worker Configuration -->  
+  <script>  
+    // The value below is injected by flutter build, do not touch.  
+    var serviceWorkerVersion = '{{flutter_service_worker_version}}';  
+  </script>  
+
+  <!-- Flutter Initialization -->  
+  <script src="flutter.js" defer=""></script>  
+</head>  
+<body>  
+  <!-- Add this script to handle CORS -->
+  <script>
+    if (window.flutter_inappwebview) {
+      window.flutter_inappwebview.callHandler('javascriptHandler', 'init');
+    }
+  </script>
+  <!-- Flutter App Entry Point -->  
+  <script>  
+    window.addEventListener('load', function(ev) {  
+      _flutter.loader.loadEntrypoint({  
+        serviceWorker: {  
+          serviceWorkerVersion: serviceWorkerVersion  
+        }  
+      }).then(function(engineInitializer) {  
+        return engineInitializer.initializeEngine();  
+      }).then(function(appRunner) {  
+        return appRunner.runApp();  
+      });  
+    });  
+  </script>  
+
+  <!-- Main Dart File -->  
+  <script src="main.dart.js" type="application/javascript"></script>  
+  <script type="text/javascript">
+    window.flutterWebRenderer = "html";
+  </script>
+
+  <httpProtocol>
+    <customHeaders>
+        <add name="Access-Control-Allow-Origin" value="*" />
+    </customHeaders>
+</httpProtocol>
+</body>  
+</html>

@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "@googlemaps/markerclusterer": "^2.5.3",
+    "firebase": "^10.12.2",
+    "firebase-admin": "^12.2.0"
+  },
+  "devDependencies": {
+    "@types/google.maps": "^3.55.9"
+  }
+}
